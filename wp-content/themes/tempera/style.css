@@ -428,6 +428,10 @@ a:link,a:visited  {
 	text-decoration: none;
     letter-spacing: -0.03em;
 	display:block;
+	color: #533335!important;
+	font-weight: bold;
+	font-family: "microsoft yahei",simhei,helvetica,"times new roman", serif!important;
+
 }
 #site-description {
 	display:inline;
@@ -436,6 +440,8 @@ a:link,a:visited  {
 	margin-top:5px;
 	padding:3px 6px 3px 0;
 	clear:both;
+    letter-spacing: 1px;
+	color: #000!important;
 }
 
 #header-container {
@@ -1968,7 +1974,6 @@ clear:both;
 	display:block;
 	float:none;
 	padding-top:5px;
-	font-style: italic;
 	clear:both;
 	margin:0 auto;
 	text-align:center;
@@ -2262,11 +2267,15 @@ color:#333;
 	position:relative;
 }
 
-.icon-homebread:before { content: '\e81f'; font-size:1em;cursor:pointer;} /* '?' */
-
- .breadcrumbs a {
+.icon-homebread:before { 
+	content: '\e81f'; font-size:1em;cursor:pointer;
 }
- .breadcrumbs a:hover {
+
+.breadcrumbs a {
+
+}
+.breadcrumbs a:hover {
+
 }
 
 /* PAGINATION */
@@ -2380,8 +2389,8 @@ color:#333;
 	width:43%;
 	z-index:8;
 	padding: 10px;
-	filter:alpha(opacity=8);
-	opacity: 0.8;
+	/*filter:alpha(opacity=8);*/
+	opacity: 0.7;
 	overflow: hidden;
 	display: none;
 	-webkit-box-sizing: border-box;
@@ -2390,6 +2399,10 @@ color:#333;
 	-webkit-border-radius:0;
 	-moz-border-radius:0;
 	border-radius:0;
+	/*background-color: rgba(0,0,0,0.7);*/
+	background-color: #000;
+	font-family: "microsoft yahei",simhei,helvetica,"times new roman", serif!important;
+
 }
 .nivo-caption h2 {
 	margin-bottom:10px;
@@ -2399,6 +2412,7 @@ color:#333;
 	border-bottom:1px solid #444;
 	font-weight:normal;
 	text-align:right;
+	font-family: "microsoft yahei",simhei,helvetica,"times new roman", serif!important;
 }
 
 .slide-text {
@@ -2839,10 +2853,6 @@ text-indent:-9999px;
 	z-index: 99;
 }
 
-body{
-	+background: #fff!important;
-}
-
 #footer{
 	margin: 20px auto;
 	max-width: 1150px;
@@ -2864,6 +2874,27 @@ body{
 
 .custom-widget-container.first-widget{
 	float:left;
+}
+
+@media screen and (max-width: 900px) {
+  .custom-widget-container{
+	width:100%;
+	min-width: 300px;
+	background: #533335;
+	color: #fff;
+	border:1px solid #948e73;
+	margin: 0 auto;
+	float: left;
+	margin-top: 10px;
+	}
+
+	.custom-widget-container.last-widget{
+		float:left;
+	}
+
+	.custom-widget-container.first-widget{
+		float:left;
+	}
 }
 
 .front-page-cols{

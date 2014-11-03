@@ -14,7 +14,7 @@ class catPostsWidget extends WP_Widget {
 			'width' => 250,
 			'height' => 300,
 		);
-		$this->WP_Widget(false, '分类目录幻灯片', $widget_ops, $control_ops);
+		$this->WP_Widget(false, '分类文章列表', $widget_ops, $control_ops);
 	}
 
 	function form($instance) {
@@ -47,7 +47,7 @@ class catPostsWidget extends WP_Widget {
 
 	function update($new_instance, $old_instance) {
 		// var_dump($new_instance);
-		var_dump($old_instance);
+		// var_dump($old_instance);
 		$instance = $old_instance;
 		$instance['title'] = strip_tags(stripslashes($new_instance['title']));
 		$instance['title_en'] = strip_tags(stripslashes($new_instance['title_en']));

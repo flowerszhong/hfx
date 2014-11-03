@@ -36,7 +36,6 @@
 	#forbottom, #colophon {margin:0 20px;}
 	.presentation-page .slider-wrapper{margin:0 auto;}
 	.presentation-page #forbottom{margin:0;}
-	.presentation-page #pp-afterslider {margin:0 20px;}
 	#front-text1, #front-text2 {padding:20px 0;} 
 	.nivo-caption {botton:20px;left:0;width:100%;}
 	
@@ -86,7 +85,9 @@
 		font-size: 13px !important;}
 	#forbottom, #colophon {margin:0 10px;}
 	.presentation-page #forbottom{margin:0;}
-	.presentation-page #pp-afterslider {margin:0 10px;}
+	.presentation-page #pp-afterslider {
+		/*margin:0 10px;*/
+	}
 	
 	#branding {	height:auto; }
 	a#logo img {margin-top:-25px;max-height:75%;max-width:90%;width:auto;height:auto;}
@@ -94,7 +95,9 @@
 	
 	#site-title span a {font-size:25px;line-height: 30px;}
 	#site-description {margin-top:3px;font-size:12px;line-height: 15px;}
-	#front-text1 h1, #front-text2 h1 {font-size:2em;line-height:1.3em;}
+	#front-text1 h1, #front-text2 h1 {
+		/*font-size:2em;line-height:1.3em;*/
+	}
 	#front-text2 h1{margin-bottom:0px;}
 	#frontpage blockquote { font-size: 1.0em; line-height: 1.6em; padding: 10px 0; }
 	
